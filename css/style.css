@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%; /*Это свойство для футера внизу*/
+
+}
+.wrapper{
+    min-height: 100%;        /*Это свойство для футера внизу*/
+    display: flex;           /*Это свойство для футера внизу*/
+    flex-direction: column;  /*Это свойство для футера внизу*/
+
+}
+
+.header, .main, .footer{
+    padding: 10px;
+}
+
+.header, .footer{
+    text-align: center;
+}
+
+.header{
+    background-color: greenyellow;
+    
+}
+
+.main{
+    background-color: burlywood;
+    flex: 1 1 auto;   /*Это свойство для футера внизу*/
+
+}
+
+.footer{
+    background-color: cadetblue;
+}
+
+
+/* REVIEWS */
+.reviews{
+    display: flex;    
+}
+
+.reviews__item{
+    flex-basis: 33.33%;
+    margin: 0 10px;
+}
+
+.review{
+    background-color: red;    
+    display: flex;           /*Это свойство для колонки одной высоты с прибиванием нижнего контента к низу*/
+    flex-direction: column;  /*Это свойство для колонки одной высоты с прибиванием нижнего контента к низу*/
+}
+
+.review__body{
+    background-color: azure;
+    padding: 10px;
+    flex: 1 1 auto;          /*Это свойство для колонки одной высоты с прибиванием нижнего контента к низу*/
+}
+
+.review__author{
+    background-color: blue;
+    padding: 10px;
+}
